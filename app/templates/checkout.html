@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}Finalizare Comandă{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="mb-4">Finalizare Comandă</h1>
+    
+    <form action="{{ url_for('checkouts.checkout') }}" method="POST" class="needs-validation" novalidate>
+        <div class="mb-3">
+            <label for="full_name" class="form-label">Nume complet</label>
+            <input type="text" class="form-control" id="full_name" name="full_name" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Adresă email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="phone" class="form-label">Telefon</label>
+            <input type="text" class="form-control" id="phone" name="phone" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="address" class="form-label">Adresă de livrare</label>
+            <textarea class="form-control" id="address" name="address" rows="4" required></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Metodă de plată</label><br>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="card" name="payment_method" value="card" required>
+                <label class="form-check-label" for="card">Card</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="bank_transfer" name="payment_method" value="bank_transfer" required>
+                <label class="form-check-label" for="bank_transfer">Transfer bancar</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="cash" name="payment_method" value="cash" required>
+                <label class="form-check-label" for="cash">Numerar</label>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Plasează Comanda</button>
+    </form>
+</div>
+{% endblock %}

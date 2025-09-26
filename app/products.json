@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Intel Core i9-13900K",
+    "price": 2500,
+    "priceo": 2400,
+    "description": "High-performance 13th Gen desktop processor ideal for gaming and productivity.",
+    "specificatii": "24 cores (8P+16E), 5.8 GHz boost, LGA1700 socket",
+    "stock": 28,
+    "img": "img/img1.avif"
+  },
+  {
+    "id": 2,
+    "name": "NVIDIA RTX 4090",
+    "price": 7200,
+    "priceo": 7200,
+    "description": "Flagship graphics card with ray tracing and AI acceleration capabilities.",
+    "specificatii": "24GB GDDR6X, 16384 CUDA cores, PCIe 4.0",
+    "stock": 8,
+    "img": "img/img2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Raspberry Pi 4 Model B",
+    "price": 359.99,
+    "priceo": 359.99,
+    "description": "Versatile microcontroller board for DIY and IoT projects.",
+    "specificatii": "Quad-core Cortex-A72, 4GB RAM, Wi-Fi, Bluetooth, USB 3.0",
+    "stock": 119,
+    "img": "img/img3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "TP-Link AX1800 WiFi 6 Router",
+    "price": 228.5,
+    "priceo": 220,
+    "description": "Reliable and fast WiFi 6 router for home and small office networks.",
+    "specificatii": "Dual-band, 1.8Gbps, WPA3, MU-MIMO",
+    "stock": 60,
+    "img": "img/img4.webp"
+  },
+  {
+    "id": 5,
+    "name": "Arduino Uno R3",
+    "price": 32.99,
+    "priceo": 24.99,
+    "description": "Classic microcontroller board for embedded systems and prototyping.",
+    "specificatii": "ATmega328P, 14 digital I/O, USB connection",
+    "stock": 198,
+    "img": "img/img5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Corsair Vengeance DDR5 32GB",
+    "price": 470,
+    "priceo": 470,
+    "description": "High-speed DDR5 RAM module for next-gen systems.",
+    "specificatii": "32GB (2x16GB), 6000MHz, CL36, RGB",
+    "stock": 75,
+    "img": "img/img6.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Samsung 980 PRO NVMe SSD 1TB",
+    "price": 650,
+    "priceo": 650,
+    "description": "Ultra-fast PCIe 4.0 SSD for high-performance storage.",
+    "specificatii": "Read: 7000MB/s, Write: 5000MB/s, M.2",
+    "stock": 50,
+    "img": "img/img7.png"
+  },
+  {
+    "id": 8,
+    "name": "Ubiquiti UniFi Switch 8",
+    "price": 950,
+    "priceo": 950,
+    "description": "Managed Gigabit switch for scalable enterprise networking.",
+    "specificatii": "8x RJ45 ports, 2x SFP, Layer 2, PoE+ support",
+    "stock": 30,
+    "img": "img/img8.webp"
+  },
+  {
+    "id": 9,
+    "name": "AMD Ryzen 9 7950X",
+    "price": 3500,
+    "priceo": 3500,
+    "description": "High-end 16-core processor with AM5 socket support.",
+    "specificatii": "16 cores, 32 threads, 5.7 GHz max boost",
+    "stock": 20,
+    "img": "img/img9.avif"
+  },
+  {
+    "id": 10,
+    "name": "Seagate FireCuda 530 NVMe SSD 2TB",
+    "price": 1700,
+    "priceo": 1499,
+    "description": "High-performance PCIe 4.0 SSD designed for gaming and heavy workloads.",
+    "specificatii": "2TB, Read up to 7300MB/s, Write up to 6900MB/s, M.2 2280",
+    "stock": 40,
+    "img": "img/img11.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Jetson Nano Developer Kit",
+    "price": 500,
+    "priceo": 500,
+    "description": "AI-focused microcontroller platform from NVIDIA.",
+    "specificatii": "Quad-core ARM Cortex-A57, 128-core Maxwell GPU, 4GB RAM",
+    "stock": 40,
+    "img": "img/img10.jpg"
+  },
+  {
+    "id": 12,
+    "name": "ASUS ROG Strix Z790-E Gaming Motherboard",
+    "price": 3200,
+    "priceo": 3100,
+    "description": "High-end motherboard optimized for 13th Gen Intel CPUs with advanced cooling and connectivity features.",
+    "specificatii": "LGA 1700 socket, DDR5 support, PCIe 5.0, WiFi 6E, Thunderbolt 4",
+    "stock": 25,
+    "img": "img/img12.png"
+  }
+]

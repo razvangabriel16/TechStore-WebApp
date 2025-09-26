@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Comenzile mele{% endblock %}
+
+{% block content %}
+<h2>Comenzile lui {{ username }}</h2>
+
+{% if orders %}
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nr. Comandă</th>
+            <th>Data</th>
+            <th>Nume</th>
+            <th>Email</th>
+            <th>Telefon</th>
+            <th>Adresă</th>
+            <th>Metoda de plată</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for order in orders %}
+        <tr>
+            <td>{{ order.order_id }}</td>
+            <td>{{ order.timestamp }}</td>
+            <td>{{ order.full_name }}</td>
+            <td>{{ order.email }}</td>
+            <td>{{ order.phone }}</td>
+            <td>{{ order.address }}</td>
+            <td>{{ order.payment_method }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>Nu ai plasat nicio comandă încă.</p>
+{% endif %}
+{% endblock %}

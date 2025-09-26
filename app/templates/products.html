@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}{{title}}{% endblock %}
+
+{% block extra_css %}
+<!-- Font Google și stil personalizat -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body {
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .product-title {
+    color: #ff6347;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .btn-custom {
+    background-color: #000000;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .card-custom {
+    background-color: #ffffff;
+  }
+
+  .tva-inclus {
+    font-size: 0.6rem;
+    color: #6c757d;
+  }
+
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #110f0e;
+  }
+
+  h5 {
+    font-family: 'Roboto', sans-serif;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+  <h1 class="mb-4 text-center">{{title}}</h1>
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    {% for product in pr_list %}
+      <div class="col">
+        <div class="card h-100 card-custom">
+          <div class="card-body">
+            <h5 class="card-title product-title">{{ product.name }}</h5>
+            <p class="card-text text-muted">{{ product.description[:100] }}...</p>
+            <p class="card-text">
+  {% if product.priceo != product.price %}
+    <span style="text-decoration: line-through; color: #888;">{{ product.price }} RON</span>
+    <strong class="ms-2">{{ product.priceo }} RON</strong>
+  {% else %}
+    <strong>{{ product.price }} RON</strong>
+  {% endif %}
+  <span class="tva-inclus">(TVA inclus)</span>
+</p>
+            <img src="{{ url_for('static', filename=product.img) }}" class="img-fluid" style="max-width: 200px;">
+            <a href="{{ url_for('products.product_detail', product_id=product.id) }}" class="btn btn-custom mt-2">Detalii</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
